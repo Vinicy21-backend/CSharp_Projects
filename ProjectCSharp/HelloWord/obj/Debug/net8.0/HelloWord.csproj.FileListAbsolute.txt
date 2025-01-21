@@ -1,0 +1,14 @@
+D:\1.Projetos\ProjectCSharp\HelloWord\bin\Debug\net8.0\HelloWord.exe
+D:\1.Projetos\ProjectCSharp\HelloWord\bin\Debug\net8.0\HelloWord.deps.json
+D:\1.Projetos\ProjectCSharp\HelloWord\bin\Debug\net8.0\HelloWord.runtimeconfig.json
+D:\1.Projetos\ProjectCSharp\HelloWord\bin\Debug\net8.0\HelloWord.dll
+D:\1.Projetos\ProjectCSharp\HelloWord\bin\Debug\net8.0\HelloWord.pdb
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\HelloWord.GeneratedMSBuildEditorConfig.editorconfig
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\HelloWord.AssemblyInfoInputs.cache
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\HelloWord.AssemblyInfo.cs
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\HelloWord.csproj.CoreCompileInputs.cache
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\HelloWord.dll
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\refint\HelloWord.dll
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\HelloWord.pdb
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\HelloWord.genruntimeconfig.cache
+D:\1.Projetos\ProjectCSharp\HelloWord\obj\Debug\net8.0\ref\HelloWord.dll

@@ -1,0 +1,14 @@
+D:\1.Projetos\ProjectCSharp\Calculadora\bin\Debug\net8.0\Calculadora.exe
+D:\1.Projetos\ProjectCSharp\Calculadora\bin\Debug\net8.0\Calculadora.deps.json
+D:\1.Projetos\ProjectCSharp\Calculadora\bin\Debug\net8.0\Calculadora.runtimeconfig.json
+D:\1.Projetos\ProjectCSharp\Calculadora\bin\Debug\net8.0\Calculadora.dll
+D:\1.Projetos\ProjectCSharp\Calculadora\bin\Debug\net8.0\Calculadora.pdb
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\Calculadora.AssemblyInfoInputs.cache
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\Calculadora.AssemblyInfo.cs
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\Calculadora.csproj.CoreCompileInputs.cache
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\Calculadora.dll
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\refint\Calculadora.dll
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\Calculadora.pdb
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\Calculadora.genruntimeconfig.cache
+D:\1.Projetos\ProjectCSharp\Calculadora\obj\Debug\net8.0\ref\Calculadora.dll
