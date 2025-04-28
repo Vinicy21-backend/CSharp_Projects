@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1.Projetos\\ProjectCSharp\\HelloWord\\HelloWord.csproj",
+      "projectUniqueName": "C:\\Users\\crist\\OneDrive\\Documentos\\GitHub\\CSharp_Projects\\ProjectCSharp\\HelloWord\\HelloWord.csproj",
       "projectName": "HelloWord",
-      "projectPath": "D:\\1.Projetos\\ProjectCSharp\\HelloWord\\HelloWord.csproj",
+      "projectPath": "C:\\Users\\crist\\OneDrive\\Documentos\\GitHub\\CSharp_Projects\\ProjectCSharp\\HelloWord\\HelloWord.csproj",
       "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
-      "outputPath": "D:\\1.Projetos\\ProjectCSharp\\HelloWord\\obj\\",
+      "outputPath": "C:\\Users\\crist\\OneDrive\\Documentos\\GitHub\\CSharp_Projects\\ProjectCSharp\\HelloWord\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
