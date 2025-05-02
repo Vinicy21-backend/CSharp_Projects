@@ -16,38 +16,32 @@ namespace Rpg_Game.Sistemas
 
         // Inicia uma fase específica
         public static void IniciarFase(int numeroFase, Personagem jogador)
+{
+    if (_fases.TryGetValue(numeroFase, out Fase fase))
+    {
+        Console.WriteLine($"\n=== FASE {numeroFase} ===");
+        bool vitoria = IniciarBatalha(jogador, fase.InimigoLevel); // Agora usa o combate real
+
+        if (vitoria)
         {
-            if (_fases.TryGetValue(numeroFase, out Fase fase))
-            {
-                Console.WriteLine($"\n=== FASE {numeroFase} ===");
-                Console.WriteLine($"Inimigos Nível: {fase.InimigoLevel}");
-
-                // Simula uma batalha (pode ser substituído por Batalha.Iniciar())
-                bool vitoria = SimularBatalha(jogador, fase.InimigoLevel);
-
-                if (vitoria)
-                {
-                    DarRecompensa(jogador, fase);
-                    Console.WriteLine($"\nVocê avançou para a próxima fase!");
-                }
-                else
-                {
-                    Console.WriteLine("Você foi derrotado... Tente novamente!");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Fase não encontrada!");
-            }
+            DarRecompensa(jogador, fase);
         }
-
-        private static bool SimularBatalha(Personagem jogador, int inimigoLevel)
+        else
         {
-            // Lógica simplificada (substitua por Batalha.cs)
-            Console.WriteLine($"Batalha contra inimigos nível {inimigoLevel}...");
-            Random rand = new Random();
-            return rand.Next(0, 2) == 1; // 50% de chance de vitória
+            Console.WriteLine("Você foi derrotado... Tente novamente!");
         }
+    }
+}
+
+        private static bool IniciarBatalha(Personagem jogador, int inimigoLevel)
+{
+    // Cria um inimigo baseado no nível da fase
+    Inimigo inimigo = new Inimigo($"Inimigo Nv.{inimigoLevel}", inimigoLevel);
+    Console.WriteLine($"\n💀 Um {inimigo.Nome} apareceu!");
+
+    // Chama o sistema de batalha real
+    return Batalha.Iniciar(jogador, inimigo); // Agora vai para o combate por turnos
+}
 
         private static void DarRecompensa(Personagem jogador, Fase fase)
         {

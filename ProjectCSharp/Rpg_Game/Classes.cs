@@ -53,7 +53,7 @@ public abstract class Personagem
 
 public class Guerreiro : Personagem
 {
-    public Guerreiro (string nome) : base(nome, vida : 100, ataque : 20, defesa : 15){}
+    public Guerreiro (string nome) : base(nome, vida : 100, ataque : 20, defesa : 10){}
 
     public override void Atacar(Personagem alvo)
     {
@@ -73,7 +73,7 @@ public class Mago : Personagem
 {
     public int Mana { get; private set; }
 
-    public Mago(string nome) : base(nome, vida: 70, ataque: 15, defesa: 5) 
+    public Mago(string nome) : base(nome, vida: 70, ataque: 15, defesa: 8) 
     {
         Mana = 100;
     }
@@ -108,12 +108,57 @@ public class Inimigo : Personagem
         {
             Nivel = nivel;
             Vida = 50 + (nivel * 10);  // Vida escala com o nível
-            AtaqueBase = 5 + (nivel * 2);
+            AtaqueBase = 8 + (nivel * 2);
         }
 
         public override void Atacar(Personagem alvo)
+    {
+        int dano = AtaqueBase - alvo.Defesa;
+        if (dano > 0)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Nome} atacou {alvo.Nome} e causou {dano} de dano!");
+            alvo.ReceberDano(AtaqueBase);
+        }
+        else
+        {
+            Console.WriteLine($"{Nome} atacou, mas {alvo.Nome} defendeu!");
         }
     }
+    }
+
+
+    public class Orc : Inimigo
+    {
+        public Orc(int nivel) : base($"Orc Nv.{nivel}", nivel)
+        {
+            Vida += 30;
+            AtaqueBase += 7;
+
+        }
+        
+        public void Machadada(Personagem alvo)
+        {
+            Console.WriteLine($"{Nome} Machadada!");
+            alvo.ReceberDano(AtaqueBase*2);
+
+        }
+    
+
+    }
+
+  public class Dragao : Inimigo
+{
+    public Dragao(int nivel) : base($"Dragão Nv.{nivel}", nivel)
+    {
+        Vida += 100; // Bônus de vida para chefes
+        AtaqueBase += 15;
+    }
+
+    public void Baforada(Personagem alvo)
+        {
+            Console.WriteLine($"{Nome} Baforada de Fogo!");
+            alvo.ReceberDano(AtaqueBase*2);
+
+        }
+}
 }
